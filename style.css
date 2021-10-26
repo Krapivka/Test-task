@@ -1,0 +1,157 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	background: url(img/background1.jpg) no-repeat center;
+
+}
+
+body{
+	overflow-y: hidden;
+	overflow-x: hidden; 
+}
+p{
+	font-family: Lab Grotesque;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+	max-width: 670px;
+}
+
+.chat-top{
+	height: 70%;
+	border-bottom: solid 1px #323C46;
+	width: 100%;
+	height:520px;
+	overflow: visible;
+	overflow-y: auto;
+	overflow-x: hidden; 
+}
+
+.message{
+	display: flex;
+	margin: 17px 0px 17px 0px;
+}
+
+.message--right{
+	flex-direction: row-reverse;
+}
+
+.message__img{
+	border-radius: 50px;
+	width: 46px;
+	height: 46px;
+}
+
+.message__text{
+	max-width: 450px;
+	padding: 15px;
+	margin: 0px 20px 0px 20px;
+	border-radius: 4px;
+}
+.message__text__p{
+	line-height: 150%;
+}
+
+.message__text--left {
+	position: relative;
+	background: #fff;
+}
+.message__text--left:before {
+	position: absolute;
+	top: 7px;
+	left: -7.5px;
+	content: "";
+	width: 15px;
+	height: 9px;
+	background-image: url(img/Rect1.png);
+	display: block;
+}
+
+.message__text--right {
+	position: relative;
+	background: #FFEFE9;
+}
+
+.message__text--right:after {
+	position: absolute;
+	top: 7px;
+	right: -7.5px;
+	content: "";
+	width: 15px;
+	height: 9px;
+	background-image: url(img/Rect2.png);
+	display: block;
+}
+
+.message-date{
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px 30px 0px;
+	position: relative;
+}
+
+.message-date__date{
+	width: 120px;
+	text-align: center;
+	position: relative;
+}
+.message-date__date:before {
+	position: absolute;
+	content: "";
+	width: 1000px;
+	top: 7.5px;
+	right: 130px;
+	border-top: 1px solid #323C46;
+	text-align: center;
+}
+
+.message-date__date:after {
+	position: absolute;
+	content: "";
+	width: 1000px;
+	top: 7.5px;
+	left: 130px;
+	border-top: 1px solid #323C46;
+	text-align: center;
+}
+
+.chat-bottom{
+	height: 30%;
+}
+.chat-bottom__textarea{
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	border-radius: 4px;
+	margin: 20px 0px 20px 0px; 
+	height: 129px;
+	resize: none;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #DBDBDB;
+}
+
+.chat-bottom__btn{
+	text-decoration: none;
+	background: #BD7B5F;
+	padding: 10px 30px 10px 30px;
+	box-shadow: 0px 4px 6px rgba(156, 91, 64, 0.3);
+	border-radius: 21px;
+	text-align: center;
+	color: #fff;
+	font-family: Proxima Nova;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+}
+
